@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title> MakeyMakey playground.</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<!-- Bootstrap -->
+		<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<!--Bootstrap components-->
+		
+		 <script src="keys.js"></script>
+		
+	</head>
+	<body>
+	<!-- Modal -->
+<div class="modal fade" id="sr_forms" tabindex="-1" aria-labelledby="myModalLabel" role="alertdialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <h4 autofocus="true" id="myModalLabel" class="modal-title" aria-label="action required." tabindex=-1>Action required</h4>
+      </div>
+      <div  class="modal-body" role="document" tabindex=0>
+		<p>
+		Put your screen reader in focus mode/ forms mode. In Nvda, press nvda+space and you will hear a ping sound or nvda will say focus mode.<br/>
+		In jaws, You need to press nvda+z, and you should hear that virtual navigation is off.
+		<br/>
+		Make sure you turn browse mode back on after you are done.
+		</p>
+		
+      </div>
+	  <button type="button" class="close" data-dismiss="modal" aria-label="Close" ><span aria-hidden="true">&times;</span></button>
+    </div>
+  </div>
+</div>
+	<div class="container" id="wrapper_982q4359q82weusadflkjsadrqw34982q35rhhawoisfh"> <!-- random id so that I don't clash with a name. -->
+	<nav>
+	<ul class="nav nav-pills nav-justified">
+		<li role="presentation" class="active"><a href="javascript:tutorial.setMode(tutorialConst.OFF)">Home</a></li>
+		<li role="presentation" class="active"><a href="javascript:tutorial.setMode(tutorialConst.LEARN)">Learn</a></li>
+		<li role="presentation" class="active"><a href="javascript:tutorial.setMode(tutorialConst.PRACTICE)">Practice</a></li>
+		<li role="presentation" class="active"><a href="javascript:tutorial.setMode(tutorialConst.GAME)">Play games</a></li>
+		
+</ul>
+</nav>
+
+
+<div tabindex=0 role="main" id="mainContents" class="jumbotron">
+
+<div id="page_off">
+<h1 class="focused" tabindex="-1"> Welcome to the tutorial.</h1>
+<p> 
+How to use this page.
+<br/>
+</p>
+<ul>
+<li> To learn how to use your makeyMakey, click on, or press enter on the <em>Learn</em> tab.</li>
+<li> To be given a practice environment where you will be asked to connect a circuit up, press the <em>Practice</em> tab.</li>
+<li>To be given games to play, press the <em>Game</em> tab.</li>
+</ul>
+
+
+</div>
+<div id="page_learn" class="rkp">
+<p class="focused" tabindex="-1" onfocus="makeyMakey.showModal('#sr_forms')"> Alert: </p>
+<h1  id="learn_header" tabindex=0> Learn how to use your makeyMakey.</h1>
+<div id="learn_mode">
+<p>
+Connect your makeyMakey up in some configuration. Then </p>
+<p id="learn_area" aria-live="polite">
+Connect the makeyMakey to learn which key is which.
+</p>
+</div>
+</div>
+<div id="page_practice">
+<p class="focused" tabindex="-1" onfocus="makeyMakey.showModal('#sr_forms')">Alert:</p>
+<h1 tabindex=-1> Practice with your makeyMakey.</h1>
+<p> Will NVDA Read this text?</p>
+</div>
+<div id="page_game">
+<p class="focused" tabindex="-1" onfocus="makeyMakey.showModal('#sr_forms')">Alert:</p>
+<h1 tabindex=-1> Play makeyMakey games.</h1>
+<p> Will NVDA Read this text?</p>
+</div>
+
+</div>
+		
+	</body>
+</html>
+  
